@@ -7,7 +7,67 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* stylelint-enable */
 
 /* Begin site styles below */
+/*
+  base font-size: 18px
+  base line-height: 22px
+  1.618/Phi is our modular scale:
+  https://www.modularscale.com/?18&px&1.618
+*/
 
+html {
+  background: #222;
+  color: #EEE;
+  font-family: 'Merriweather', sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  padding: 22px;
+}
+
+h1 {
+  font-size: 29.124px;
+  line-height: 44px;
+}
+
+p{
+  padding-bottom: 22px;
+}
+
+/* Forms */
+input, label {
+  display: block;
+  box-sizing: border-box;
+}
+
+input {
+  padding:22px;
+  margin: 0;
+  font-size: inherit;
+  line-height: inherit;
+  border: 0;
+  outline: 0;
+  width: 100%;
+}
+
+input[type="tel"] {
+  margin-bottom: 11px;
+  background-color: rgba(67,176,183,1.0);
+}
+
+input[type="tel"]:focus {
+  background-color: #EEE;
+}
+
+input[type="submit"]{
+  background-color: rgba(67,176, 183, 0.2);
+}
+
+.hint {
+  font-style: italic;
+}
+
+.hint b {
+  color: red;
+}
 
 
 /*Diagnostic CSS*/
@@ -18,24 +78,26 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 */
 
 body.g {
-    position: relative;
+  position: relative;
 }
 
 body.g::after {
-    /* Change the `height` parameter here to match your base line-height. */
-    background: url('data:image/svg+xml;utf8,<svg height="27" width="1" xmlns="http://www.w3.org/2000/svg"><rect width="1" height="0.5" style="fill:rgba(255, 0, 0, 0.3)" /></svg>') repeat top left;
+  /* Change the `height` parameter here to match your base line-height. */
+  background: url('data:image/svg+xml;utf8,<svg height="22" width="1" xmlns="http://www.w3.org/2000/svg"><rect width="1" height="0.5" style="fill:rgba(255, 0, 0, 0.3)" /></svg>') repeat top left;
 
-    content: "";
-    display: block;
-    pointer-events: none;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 9999;
-    position: absolute;
+  content: "";
+  display: block;
+  pointer-events: none;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+  position: absolute;
 }
 
 body.g:active::after {
-    display: none;
+  display: none;
 }
+
+/*End Diagnostic CSS*/
