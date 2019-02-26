@@ -18,18 +18,18 @@ html {
   background: #222;
   color: #EEE;
   font-family: Merriweather, sans-serif;
-  font-size: 18px;
-  line-height: 22px;
-  padding: 22px;
+  font-size: 1.125em /* 18px / 16 = 1.125 */
+  line-height: 1.22222222em; /* 22px /18 = 1.2222222 */
+  padding: 1.22222222em; /* 22px /18 = 1.2222222 */
 }
 
 h1 {
-  font-size: 29.124px;
-  line-height: 44px;
+  font-size:1.618em /* 29.124px / 18 = 1.618em */
+  line-height:1.510781486em /*44px /29.124 = 1.51078 */
 }
 
 p {
-  padding-bottom: 22px;
+  padding-bottom: 1.22222222em /* 22px / 18 */
 }
 
 /* Forms */
@@ -39,7 +39,7 @@ input, label {
 }
 
 input {
-  padding: 22px;
+  padding: 1.22222222em; /*22px / 18 */
   margin: 0;
   font-size: inherit;
   line-height: inherit;
@@ -50,7 +50,7 @@ input {
 
 input[type="tel"] {
   margin-bottom: 11px;
-  background-color: rgba(67,176,183,1);
+  background-color: rgba(67,176,183,1.0);
 }
 
 input[type="tel"]:focus {
@@ -58,6 +58,10 @@ input[type="tel"]:focus {
 }
 
 input[type="submit"] {
+  background-color: rgba(67,176, 183, 8.0);
+}
+
+input[type="submit"]:disabled {
   background-color: rgba(67,176, 183, 0.2);
 }
 
