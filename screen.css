@@ -44,7 +44,7 @@ p {
   margin: 10% 10% 85vw 10%; /* top right bottom left */
 }
 
-#signup_banner {
+#signup-logo {
   font-family: Comic;
   font-size: 1.333333em; /*24px/18 = 1.3333333em*/
   line-height: inherit;
