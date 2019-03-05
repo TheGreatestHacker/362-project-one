@@ -29,13 +29,27 @@ html {
 }
 
 h1 {
-  font-size:44px; /* 29.124px / 18 = 1.618em */
+  font-size:1.618em; /* 29.124px / 18 = 1.618em */
   line-height:1.510781486em;/*44px /29.124 = 1.51078 */
   margin-bottom: 22px;
 }
 
 p {
   padding-bottom: 1.22222222em; /* 22px / 18 */
+}
+
+#content {
+  background: #222;
+  padding: 5% 5% 5% 5%;
+  margin: 10% 10% 85vw 10%; /* top right bottom left */
+}
+
+#signup_banner {
+  font-family: cursive;
+  font-size: 20px;
+  line-height: inherit;
+  text-align: center;
+  background-color: blue;
 }
 
 /* Forms */
@@ -86,13 +100,6 @@ input[type="text"] {
 
 .hint b {
   color: red;
-}
-
-#content {
-  background: #222;
-  margin: 10% 10% 0px 10%; /* top right bottom left */
-  padding: 5% 5% 5% 5%;
-
 }
 
 @media only screen and (min-width:660px) {
