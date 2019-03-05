@@ -19,7 +19,7 @@ html {
   background: #222;
   color: #EEE;
   font-family: Merriweather, sans-serif;
-  font-size: 1.125em /* 18px / 16 = 1.125 */
+  font-size: 1.125em; /* 18px / 16 = 1.125 */
   line-height: 1.22222222em; /* 22px /18 = 1.2222222 */
   padding: 1.22222222em; /* 22px /18 = 1.2222222 */
   background-image: url("assets/img/veggies-1080.jpg");
@@ -31,7 +31,7 @@ html {
 h1 {
   font-size:1.618em; /* 29.124px / 18 = 1.618em */
   line-height:1.510781486em;/*44px /29.124 = 1.51078 */
-  margin-bottom: 22px;
+  margin-bottom: 1.22222222em; /*22px/18=1.222222em*/
 }
 
 p {
@@ -45,11 +45,10 @@ p {
 }
 
 #signup_banner {
-  font-family: cursive;
-  font-size: 20px;
+  font-family: Comic;
+  font-size: 1.333333em; /*24px/18 = 1.3333333em*/
   line-height: inherit;
   text-align: center;
-  background-color: blue;
 }
 
 /* Forms */
